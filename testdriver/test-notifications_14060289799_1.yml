@@ -1,0 +1,8 @@
+version: 4.2.23
+session: 67e2adaa97532e5178f67fd9
+steps:
+  - prompt: Interact with the notifications bell/icon.
+    commands:
+      - command: hover-image
+        description: notifications bell icon in the top right corner
+        action: click
