@@ -1,0 +1,21 @@
+version: 4.2.23
+session: 67e2adbda51b3bc1f44fdb47
+steps:
+  - prompt: Navigate to the prices section.
+    commands:
+      - command: hover-text
+        text: Prices
+        description: prices section in the dashboard
+        action: click
+  - prompt: >-
+      Assert that "Retail price" and "Adjusted price" are displayed with correct
+      values.
+    commands:
+      - command: assert
+        expect: Retail price is 14
+      - command: assert
+        expect: Adjusted price is 389
+  - prompt: Verify the consistency of the total price value.
+    commands:
+      - command: assert
+        expect: Total price is 403
