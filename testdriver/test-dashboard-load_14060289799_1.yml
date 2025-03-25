@@ -1,0 +1,15 @@
+version: 4.2.23
+session: 67e2ada4a51b3bc1f44fdb3b
+steps:
+  - prompt: Navigate to the dashboard page.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Assert that all widgets load correctly without errors.
+    commands:
+      - command: assert
+        expect: all widgets display data without errors
+  - prompt: Assert the presence of the "Good day Jeroen-s" greeting.
+    commands:
+      - command: assert
+        expect: the greeting "Good day Jeroen-s" is visible on the dashboard
