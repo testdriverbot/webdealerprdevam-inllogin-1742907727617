@@ -1,0 +1,33 @@
+version: 4.2.23
+session: 67e2adb397532e5178f67fe1
+steps:
+  - prompt: Click on each icon in the sidebar.
+    commands:
+      - command: hover-image
+        description: first icon in the sidebar
+        action: click
+      - command: hover-image
+        description: second icon in the sidebar
+        action: click
+      - command: hover-image
+        description: third icon in the sidebar
+        action: click
+      - command: hover-image
+        description: fourth icon in the sidebar
+        action: click
+      - command: hover-image
+        description: fifth icon in the sidebar
+        action: click
+      - command: hover-image
+        description: sixth icon in the sidebar
+        action: click
+  - prompt: Click on each icon in the sidebar.
+    commands:
+      - command: hover-image
+        description: fourth icon in the sidebar
+        action: click
+  - prompt: Click on each icon in the sidebar.
+    commands:
+      - command: hover-image
+        description: fourth icon in the sidebar
+        action: click
