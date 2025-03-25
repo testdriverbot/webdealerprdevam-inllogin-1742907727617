@@ -1,0 +1,12 @@
+version: 4.2.23
+session: 67e2ad9ea51b3bc1f44fdb39
+steps:
+  - prompt: Navigate to the stock section.
+    commands:
+      - command: hover-image
+        description: stock icon in the sidebar
+        action: click
+  - prompt: Assert that "In stock" and "Published" data is displayed accurately.
+    commands:
+      - command: assert
+        expect: In stock and Published data is displayed accurately
