@@ -1,0 +1,7 @@
+version: 4.2.23
+session: 67e2ada397532e5178f67fd6
+steps:
+  - prompt: Assert that user is redirected to the login page.
+    commands:
+      - command: assert
+        expect: the page contains "Sign in"
