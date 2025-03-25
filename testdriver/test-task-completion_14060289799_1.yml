@@ -1,0 +1,53 @@
+version: 4.2.23
+session: 67e2ada297532e5178f67fd4
+steps:
+  - prompt: Navigate to the "Today tasks" section.
+    commands:
+      - command: hover-text
+        text: Today tasks
+        description: today tasks section header
+        action: click
+  - prompt: Mark a task as complete.
+    commands:
+      - command: hover-text
+        text: Today tasks
+        description: today tasks section header
+        action: click
+      - command: hover-text
+        text: Never
+        description: dismiss save password prompt
+        action: click
+  - prompt: Mark a task as complete.
+    commands:
+      - command: hover-text
+        text: Block
+        description: block notifications prompt
+        action: click
+      - command: hover-text
+        text: Today tasks
+        description: today tasks section header
+        action: click
+      - command: hover-text
+        text: Expired
+        description: task status in today tasks section
+        action: click
+  - prompt: Mark a task as complete.
+    commands:
+      - command: hover-text
+        text: Factuur (details) correct (or not??...)
+        description: task item in the list
+        action: click
+      - command: hover-text
+        text: Factuur ontvangen?
+        description: checkbox to mark task as complete
+        action: click
+  - prompt: Mark a task as complete.
+    commands:
+      - command: hover-text
+        text: Factuur ontvangen?
+        description: checkbox to mark task as complete
+        action: click
+  - prompt: Assert that the task status updates and reflects correctly.
+    commands:
+      - command: assert
+        expect: the task "Factuur ontvangen?" is marked as complete
