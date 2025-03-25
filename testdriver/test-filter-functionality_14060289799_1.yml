@@ -1,0 +1,15 @@
+version: 4.2.23
+session: 67e2adb9a51b3bc1f44fdb44
+steps:
+  - prompt: Click on the "Filter particular dealer" input.
+    commands:
+      - command: hover-text
+        text: Filter particular dealers
+        description: filter input field
+        action: click
+  - prompt: Apply a filter with test criteria.
+    commands:
+      - command: hover-text
+        text: Target Consignment, Amsterdam
+        description: filter option for Target Consignment
+        action: click
