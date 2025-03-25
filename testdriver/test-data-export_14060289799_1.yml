@@ -1,0 +1,8 @@
+version: 4.2.23
+session: 67e2adaca51b3bc1f44fdb3f
+steps:
+  - prompt: Navigate to relevant data on the dashboard.
+    commands:
+      - command: hover-image
+        description: dashboard icon in the sidebar
+        action: click
