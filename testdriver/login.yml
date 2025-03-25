@@ -1,0 +1,36 @@
+version: 4.2.23
+session: 67e2aaf6a51b3bc1f44fdb1c
+steps:
+  - prompt: login with username "jdols" and password "ikhebspijtvanrobert1xBoosMaken!"
+    commands:
+      - command: hover-text
+        text: Username or Email
+        description: username input field
+        action: click
+      - command: type
+        text: jdols
+      - command: press-keys
+        keys:
+          - tab
+      - command: type
+        text: ikhebspijtvanrobert1xBoosMaken!
+      - command: hover-text
+        text: Continue
+        description: continue button
+        action: click
+  - prompt: login with username "jdols" and password "ikhebspijtvanrobert1xBoosMaken!"
+    commands:
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: ikhebspijtvanrobert1xBoosMaken!
+      - command: hover-text
+        text: Sign in
+        description: sign in button
+        action: click
+      - command: hover-text
+        text: Block
+        description: block notifications pop-up
+        action: click
